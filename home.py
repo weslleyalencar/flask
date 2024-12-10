@@ -1,5 +1,4 @@
-from flask import Flask, json
-import requests 
+from flask import Flask
 import api
 app = Flask(__name__)
 
@@ -9,4 +8,4 @@ def home(cep):
     return dados
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
